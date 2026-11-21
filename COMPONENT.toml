@@ -1,0 +1,16 @@
+[component]
+name = "SigmaOS-westcos"
+tier = 2
+stability = "beta"
+language = "shell"
+description = "SigmaOS integration for WestCOS driver: package management, config deployment, and CLI helpers."
+upstream = []
+
+[contract]
+provides = ["app-manager:westcos"]
+depends_on = []
+
+[maturity]
+status = "Implemented"
+test_evidence = "test.sh: syntax + metadata + isolated-HOME lifecycle checks"
+next_mestone = "Per-app config polish"
